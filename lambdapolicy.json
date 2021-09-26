@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "ec2:DescrineInstances",
+        "ec2:GetInstances"
+      ],
+      "Resource": "arn:aws:ec2:*:*:instance/*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "ec2:DescribeVolume",
+        "ec2:EditVolume",
+        "ec2:GetVolumes"
+      ],
+      "Resource": "arn:aws:ec2:*:*:volume/*",
+      "Effect": "Allow"
+    }
+  ]
+}
